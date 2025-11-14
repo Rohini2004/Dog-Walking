@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WagWorthy Walks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts for improved hero typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Bootstrap overrides -->
+    <link rel="stylesheet" href="bootstrap-custom.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="paws.png" alt="WagWorthy Walks Logo" height="30" class="me-2">
+                WagWorthy Walks
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who-we-are">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#missionSection">Our Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviewsSection">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bookingSection">Book Walk</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="walkers.html" class="btn btn-outline-primary me-2">Meet Walkers</a>
+                    <a href="walkers.html#contact-section" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <main>
+        <section class="hero-section position-relative overflow-hidden text-white">
+            <div class="hero-bg"></div>
+            <div class="container position-relative py-5">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-3 fw-bold mb-4">Your Pup's Perfect Walking Experience</h1>
+                        <p class="lead mb-4 fs-4">Experience the most trusted dog walking service. Give your furry friend the joy of exploration they deserve.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#bookingSection" class="btn btn-primary btn-lg px-4 py-3">
+                                Book Now
+                                <svg class="ms-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#who-we-are" class="btn btn-outline-light btn-lg px-4 py-3">Learn More</a>
+                        </div>
+                        <div class="mt-5 d-flex gap-4">
+                            <div class="text-center">
+                                <h3 class="h2 mb-0">1000+</h3>
+                                <p class="mb-0 text-white-50">Happy Dogs</p>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="h2 mb-0">50+</h3>
+                                <p class="mb-0 text-white-50">Expert Walkers</p>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="h2 mb-0">4.9</h3>
+                                <p class="mb-0 text-white-50">Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Mission Statement Section -->
+    <section id="missionSection" class="mission-statement">
+            <div class="mission-container">
+                <div class="mission-content">
+                    <div class="mission-text-content">
+                        <h2 class="mission-title">To Maximize Every Wag.</h2>
+                        <p class="mission-text">
+                            Our mission is simple: to create the most trusted and enjoyable dog walking experience for both pets and their parents. 
+                            We strive to foster a community of reliable, compassionate walkers and to ensure no dog has to spend a day bored at home. 
+                            We leverage technology to provide transparency and peace of mind, making the process of caring for your best friend effortless.
+                        </p>
+                    </div>
+                    <div class="mission-image">
+                        <img src="dog_walk.jpeg" alt="Happy dog enjoying a walk" class="mission-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Dynamic Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts">
+        <div class="section-header">
+            <span class="subtitle">LATEST INSIGHTS</span>
+            <h2>Dog Walking Tips & Stories</h2>
+        </div>
+        <div id="dynamic-content" class="dynamic-content">
+            <div class="loading">Loading latest posts...</div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are" class="who-we-are py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase small">WHO WE ARE</span>
+                <h2 class="display-4 mt-2">Built By Pet Owners, For Pet Owners</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Safety First Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-wrapper mb-4 bg-primary bg-opacity-10 rounded-circle p-3 d-inline-block">
+                                <svg class="feature-icon text-primary" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="h4 mb-3">Safety First</h3>
+                            <p class="text-muted mb-0">All our walkers are background-checked, insured, and trained in pet first aid. GPS tracking is standard on every walk.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seamless Communication Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-wrapper mb-4 bg-primary bg-opacity-10 rounded-circle p-3 d-inline-block">
+                                <svg class="feature-icon text-primary" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="h4 mb-3">Seamless Communication</h3>
+                            <p class="text-muted mb-0">Receive instant updates, photos, and a detailed summary report after every walk directly through our mobile app.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personalized Care Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-wrapper mb-4 bg-primary bg-opacity-10 rounded-circle p-3 d-inline-block">
+                                <svg class="feature-icon text-primary" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="h4 mb-3">Personalized Care</h3>
+                            <p class="text-muted mb-0">We match your dog with walkers who fit their personality and needs, ensuring a happy and stress-free experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Reviews Section -->
+        <section id="reviewsSection" class="reviews-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="text-primary fw-bold text-uppercase small">CUSTOMER REVIEWS</span>
+                    <h2 class="display-4 mt-2">What Our Customers Say</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="text-warning mb-3 fs-5">★★★★★</div>
+                                <p class="review-quote mb-4">"I've been using WagWorthy Walks for months — the walkers are reliable and the photo updates make my day. Max loves his afternoon walks!"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar bg-primary bg-opacity-10 rounded-circle p-2 me-3">
+                                        <span class="text-primary fw-bold">OP</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Olivia P.</h6>
+                                        <small class="text-muted">Los Angeles</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="text-warning mb-3 fs-5">★★★★★</div>
+                                <p class="review-quote mb-4">"Booked a puppy walk for Luna and the walker was fantastic with training tips. Highly recommend for new dog owners."</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar bg-primary bg-opacity-10 rounded-circle p-2 me-3">
+                                        <span class="text-primary fw-bold">DR</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Daniel R.</h6>
+                                        <small class="text-muted">Seattle</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="text-warning mb-3 fs-5">★★★★☆</div>
+                                <p class="review-quote mb-4">"Great service and easy booking. One of the walkers helped with basic commands during the walk which really helped at home."</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar bg-primary bg-opacity-10 rounded-circle p-2 me-3">
+                                        <span class="text-primary fw-bold">PS</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Priya S.</h6>
+                                        <small class="text-muted">New York</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="text-warning mb-3 fs-5">★★★★★</div>
+                                <p class="review-quote mb-4">"Flexible scheduling and excellent communication — the GPS maps and photos give me peace of mind when I'm at work."</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar bg-primary bg-opacity-10 rounded-circle p-2 me-3">
+                                        <span class="text-primary fw-bold">MT</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Marcus T.</h6>
+                                        <small class="text-muted">Austin</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section id="bookingSection" class="booking-section py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body p-5">
+                                <div class="text-center mb-4">
+                                    <span class="text-primary fw-bold text-uppercase small">Book Now</span>
+                                    <h2 class="display-5 mt-2">Schedule a Dog Walk</h2>
+                                    <p class="text-muted">Fill in the details below and we'll get your pup's adventure scheduled!</p>
+                                </div>
+
+                                <form id="walkBookingForm" class="needs-validation" novalidate>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="dogName" name="dogName" placeholder="e.g., Max" required>
+                                                <label for="dogName">Dog's Name</label>
+                                                <div class="invalid-feedback">Please enter your dog's name.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="dogBreed" name="dogBreed" placeholder="e.g., Golden Retriever" required>
+                                                <label for="dogBreed">Dog's Breed</label>
+                                                <div class="invalid-feedback">Please enter your dog's breed.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="(123) 456-7890" required 
+                                                    pattern="[\(]\d{3}[\)] \d{3}[\-]\d{4}">
+                                                <label for="phoneNumber">Phone Number</label>
+                                                <div class="invalid-feedback">Please enter a valid phone number: (123) 456-7890</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control" id="walkDate" name="walkDate" required>
+                                                <label for="walkDate">Preferred Date</label>
+                                                <div class="invalid-feedback">Please select a date.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="time" class="form-control" id="walkTime" name="walkTime" required>
+                                                <label for="walkTime">Preferred Time</label>
+                                                <div class="invalid-feedback">Please select a time.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="walker" name="walker" required>
+                                                    <option value="" selected disabled>Select a walker</option>
+                                                    <option value="sarah">Sarah Mitchell - Small breeds specialist</option>
+                                                    <option value="james">James Cooper - High energy breeds</option>
+                                                    <option value="emma">Emma Rodriguez - Multi-dog expert</option>
+                                                    <option value="michael">Michael Chen - Puppy specialist</option>
+                                                </select>
+                                                <label for="walker">Choose Walker</label>
+                                                <div class="invalid-feedback">Please select a walker.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                                Schedule Walk
+                                                <svg class="ms-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faqSection" class="faq-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="text-primary fw-bold text-uppercase small">FAQ</span>
+                    <h2 class="display-4 mt-2">Frequently Asked Questions</h2>
+                    <p class="text-muted">Everything you need to know about our dog walking service</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item border-0 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        How long are the walks?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Our standard walks are 30 minutes, but we offer flexible durations from 20 to 60 minutes. We'll customize the walk length based on your dog's energy level, age, and needs.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        What areas do you service?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We currently service all major neighborhoods within the city limits. Enter your zip code during booking to check if we're available in your area.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        How do I track my dog's walk?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Through our mobile app, you'll receive real-time GPS tracking, photo updates, and a detailed report after each walk, including route, duration, and bathroom breaks.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        What happens in bad weather?
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We'll notify you of any weather concerns and can either reschedule the walk or adjust the duration. For light rain, we provide towel-drying service after the walk.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand d-flex align-items-center mb-3">
+                        <img src="paws.png" alt="WagWorthy Walks Logo" height="30" class="me-2">
+                        <span class="h4 mb-0">WagWorthy Walks</span>
+                    </div>
+                    <p class="text-white-50">Making every walk a tail-wagging adventure for your furry friend.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="btn btn-outline-light btn-sm me-2" aria-label="Visit our Facebook page">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2" aria-label="Follow us on Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2" aria-label="Follow us on Twitter">
+                            <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#who-we-are" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#reviewsSection" class="text-white-50 text-decoration-none">Reviews</a></li>
+                        <li class="mb-2"><a href="#faqSection" class="text-white-50 text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="walkers.html" class="text-white-50 text-decoration-none">Our Walkers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>(555) DOG-WALK</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>info@wagworthywalks.com</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>123 Paw Street, Pet City</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Business Hours</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">Monday - Friday: 7am - 8pm</li>
+                        <li class="mb-2">Saturday: 8am - 6pm</li>
+                        <li class="mb-2">Sunday: 9am - 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">© 2025 WagWorthy Walks | All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
